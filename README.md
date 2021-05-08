@@ -1,10 +1,6 @@
 
-[![Build Status](https://travis-ci.org/zaxos/tomcat-ansible-role.svg?branch=master)](https://travis-ci.org/zaxos/tomcat-ansible-role)
-[![Ansible Galaxy](https://img.shields.io/badge/galaxy-_zaxos.tomcat--ansible--role-blue.svg)](https://galaxy.ansible.com/zaxos/tomcat-ansible-role/)
-
 tomcat-ansible-role
 ===================
-
 Ansible role to install and configure Apache Tomcat on CentOS/RHEL. 
 
 
@@ -151,3 +147,6 @@ In order to override the above values and uninstall everything, set it to "True"
 Variables for Disconnected remote environment:
 - `tomcat_remote_is_disconnected`: False  
 Change it to "True" if your remote host (managed host) is offline and cannot access internet.
+=======
+# Week3
+>>>>>>> a77230c65ee36aad531507a6c91f6a151c37788a
