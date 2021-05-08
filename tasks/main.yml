@@ -1,0 +1,12 @@
+---
+# tasks file for tomcat-ansible-role
+
+- name: Install tomcat
+  include: install.yml
+  when: tomcat_state == "present"
+
+- name: copy arti facts to document root
+  copy:
+     src: /etc/ansible/sample/sample/sample.war
+     dest: /opt/apache-tomcat-8.5.23/webapps/sample.war
+  notify : restart tomcat 
